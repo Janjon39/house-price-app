@@ -1,8 +1,8 @@
-\# House Price Prediction — End-to-End ML Web App
+# House Price Prediction — End-to-End ML Web App
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -14,33 +14,33 @@ The project includes:
 
 
 
-\* Data exploration and cleaning using Pandas
+* Data exploration and cleaning using Pandas
 
-\* Exploratory Data Analysis (EDA)
+* Exploratory Data Analysis (EDA)
 
-\* Feature engineering
+* Feature engineering
 
-\* Regression model training and evaluation
+* Regression model training and evaluation
 
-\* Model export using Joblib
+* Model export using Joblib
 
-\* FastAPI backend for serving predictions
+* FastAPI backend for serving predictions
 
-\* React + TypeScript frontend
+* React + TypeScript frontend
 
-\* End-to-end communication between the frontend, API, and machine learning model
-
-
-
-The final selected model is a \*\*Random Forest Regressor\*\*.
+* End-to-end communication between the frontend, API, and machine learning model
 
 
 
-\---
+The final selected model is a **Random Forest Regressor**.
 
 
 
-\## Architecture
+---
+
+
+
+## Architecture
 
 
 
@@ -90,89 +90,89 @@ React Result Page
 
 
 
-\---
+---
 
 
 
-\## Tech Stack
+## Tech Stack
 
 
 
-\### Machine Learning
+### Machine Learning
 
 
 
-\* Python
+* Python
 
-\* Pandas
+* Pandas
 
-\* NumPy
+* NumPy
 
-\* Scikit-learn
+* Scikit-learn
 
-\* Matplotlib
+* Matplotlib
 
-\* Seaborn
+* Seaborn
 
-\* Joblib
+* Joblib
 
-\* Jupyter Notebook
-
-
-
-\### Backend
+* Jupyter Notebook
 
 
 
-\* FastAPI
-
-\* Uvicorn
-
-\* Pydantic
-
-\* Pandas
-
-\* Scikit-learn
-
-\* Joblib
-
-\* Pytest
-
-\* HTTPX
+### Backend
 
 
 
-\### Frontend
+* FastAPI
+
+* Uvicorn
+
+* Pydantic
+
+* Pandas
+
+* Scikit-learn
+
+* Joblib
+
+* Pytest
+
+* HTTPX
 
 
 
-\* React
-
-\* TypeScript
-
-\* Vite
-
-\* React Router
+### Frontend
 
 
 
-\### Other Tools
+* React
+
+* TypeScript
+
+* Vite
+
+* React Router
 
 
 
-\* Git
-
-\* GitHub
-
-\* Docker
+### Other Tools
 
 
 
-\---
+* Git
+
+* GitHub
+
+* Docker
 
 
 
-\## Project Structure
+---
+
+
+
+## Project Structure
 
 
 
@@ -184,11 +184,11 @@ house-price-project/
 
 ├── notebooks/
 
-│   ├── house\_price\_model.ipynb
+│   ├── house_price_model.ipynb
 
 │   └── data/
 
-│       └── house\_prices.csv
+│       └── house_prices.csv
 
 │
 
@@ -230,13 +230,13 @@ house-price-project/
 
 │   │   └── utils/
 
-│   │       └── logging\_config.py
+│   │       └── logging_config.py
 
 │   │
 
 │   ├── models/
 
-│   │   ├── house\_price.pkl
+│   │   ├── house_price.pkl
 
 │   │   └── locations.json
 
@@ -244,7 +244,7 @@ house-price-project/
 
 │   ├── tests/
 
-│   │   └── test\_prediction.py
+│   │   └── test_prediction.py
 
 │   │
 
@@ -318,15 +318,15 @@ house-price-project/
 
 
 
-\---
+---
 
 
 
-\## Dataset
+## Dataset
 
 
 
-The project uses the \*\*House Price\*\* dataset by \*\*Juhi Bhojani\*\* from Kaggle.
+The project uses the **House Price** dataset by **Juhi Bhojani** from Kaggle.
 
 
 
@@ -338,7 +338,7 @@ https://www.kaggle.com/datasets/juhibhojani/house-price
 
 
 
-The dataset contains approximately \*\*187,000 property listings from India\*\*.
+The dataset contains approximately **187,000 property listings from India**.
 
 
 
@@ -346,37 +346,37 @@ Some of the original columns include:
 
 
 
-\* Amount(in rupees)
+* Amount(in rupees)
 
-\* Price (in rupees)
+* Price (in rupees)
 
-\* location
+* location
 
-\* Carpet Area
+* Carpet Area
 
-\* Floor
+* Floor
 
-\* Transaction
+* Transaction
 
-\* Furnishing
+* Furnishing
 
-\* facing
+* facing
 
-\* Society
+* Society
 
-\* Bathroom
+* Bathroom
 
-\* Balcony
+* Balcony
 
-\* Car Parking
+* Car Parking
 
-\* Ownership
+* Ownership
 
-\* Super Area
+* Super Area
 
 
 
-\### Download the Dataset
+### Download the Dataset
 
 
 
@@ -386,7 +386,7 @@ Download the dataset manually from Kaggle and place:
 
 ```text
 
-house\_prices.csv
+house_prices.csv
 
 ```
 
@@ -408,11 +408,11 @@ The raw dataset is not committed to GitHub because of its size.
 
 
 
-\---
+---
 
 
 
-\## Data Cleaning and Feature Engineering
+## Data Cleaning and Feature Engineering
 
 
 
@@ -420,7 +420,7 @@ Several preprocessing steps were performed because the original dataset contains
 
 
 
-\### Price Cleaning
+### Price Cleaning
 
 
 
@@ -462,7 +462,7 @@ A new target column called:
 
 ```text
 
-price\_clean
+price_clean
 
 ```
 
@@ -472,7 +472,7 @@ was created.
 
 
 
-\### Carpet Area
+### Carpet Area
 
 
 
@@ -484,13 +484,13 @@ Supported units included:
 
 
 
-\* sqft
+* sqft
 
-\* sqyrd
+* sqyrd
 
-\* sqm
+* sqm
 
-\* acre
+* acre
 
 
 
@@ -500,7 +500,7 @@ A new numeric feature called:
 
 ```text
 
-carpet\_area\_sqft
+carpet_area_sqft
 
 ```
 
@@ -510,7 +510,7 @@ was created.
 
 
 
-\### Floor
+### Floor
 
 
 
@@ -546,7 +546,7 @@ Ground out of 7 -> 0
 
 
 
-\### Bathroom and Balcony
+### Bathroom and Balcony
 
 
 
@@ -558,7 +558,7 @@ Missing values were filled using the median.
 
 
 
-\### Car Parking
+### Car Parking
 
 
 
@@ -584,7 +584,7 @@ Missing values were filled using the median.
 
 
 
-\### Location
+### Location
 
 
 
@@ -604,15 +604,15 @@ other
 
 
 
-\### Outliers
+### Outliers
 
 
 
-A `price\_per\_sqft` feature was calculated.
+A `price_per_sqft` feature was calculated.
 
 
 
-Rows below the \*\*1st percentile\*\* or above the \*\*99th percentile\*\* were treated as outliers.
+Rows below the **1st percentile** or above the **99th percentile** were treated as outliers.
 
 
 
@@ -630,15 +630,15 @@ The calculated boundaries were:
 
 
 
-A total of \*\*1,644 outlier rows\*\* were removed.
+A total of **1,644 outlier rows** were removed.
 
 
 
-\---
+---
 
 
 
-\## Exploratory Data Analysis
+## Exploratory Data Analysis
 
 
 
@@ -646,13 +646,13 @@ The notebook contains multiple visualizations including:
 
 
 
-1\. Price distribution using a logarithmic scale
+1. Price distribution using a logarithmic scale
 
-2\. Price vs. carpet area
+2. Price vs. carpet area
 
-3\. Average price by top 15 locations
+3. Average price by top 15 locations
 
-4\. Price by furnishing status
+4. Price by furnishing status
 
 
 
@@ -660,23 +660,23 @@ The analysis showed that property prices are highly skewed and that location and
 
 
 
-\---
+---
 
 
 
-\## Model Features
+## Model Features
 
 
 
-\### Numeric Features
+### Numeric Features
 
 
 
 ```text
 
-carpet\_area\_sqft
+carpet_area_sqft
 
-floor\_num
+floor_num
 
 bathroom
 
@@ -686,13 +686,13 @@ balcony
 
 
 
-\### Categorical Features
+### Categorical Features
 
 
 
 ```text
 
-location\_grouped
+location_grouped
 
 Furnishing
 
@@ -706,11 +706,11 @@ facing
 
 
 
-\---
+---
 
 
 
-\## Machine Learning Pipeline
+## Machine Learning Pipeline
 
 
 
@@ -718,31 +718,31 @@ A Scikit-learn `Pipeline` and `ColumnTransformer` are used so that preprocessing
 
 
 
-\### Numeric Pipeline
+### Numeric Pipeline
 
 
 
-\* Missing value imputation using median
+* Missing value imputation using median
 
-\* StandardScaler
-
-
-
-\### Categorical Pipeline
+* StandardScaler
 
 
 
-\* Missing value imputation using most frequent value
-
-\* OneHotEncoder with unknown categories ignored
+### Categorical Pipeline
 
 
 
-\---
+* Missing value imputation using most frequent value
+
+* OneHotEncoder with unknown categories ignored
 
 
 
-\## Model Training
+---
+
+
+
+## Model Training
 
 
 
@@ -788,17 +788,17 @@ Two regression models were trained and evaluated:
 
 
 
-1\. Linear Regression
+1. Linear Regression
 
-2\. Random Forest Regressor
-
-
-
-\---
+2. Random Forest Regressor
 
 
 
-\## Model Evaluation
+---
+
+
+
+## Model Evaluation
 
 
 
@@ -812,11 +812,11 @@ Two regression models were trained and evaluated:
 
 
 
-\### Selected Model
+### Selected Model
 
 
 
-\*\*Random Forest Regressor\*\* was selected as the final model.
+**Random Forest Regressor** was selected as the final model.
 
 
 
@@ -840,11 +840,11 @@ Random Forest performed better than Linear Regression because it produced lower 
 
 
 
-\---
+---
 
 
 
-\## Model Export
+## Model Export
 
 
 
@@ -854,7 +854,7 @@ The trained machine learning pipeline is exported using Joblib as:
 
 ```text
 
-house\_price.pkl
+house_price.pkl
 
 ```
 
@@ -872,11 +872,11 @@ locations.json
 
 
 
-\### Important
+### Important
 
 
 
-The generated `house\_price.pkl` file is approximately \*\*174 MB\*\*, so it is not committed directly to this GitHub repository.
+The generated `house_price.pkl` file is approximately **174 MB**, so it is not committed directly to this GitHub repository.
 
 
 
@@ -886,7 +886,7 @@ To generate the model locally, run:
 
 ```text
 
-notebooks/house\_price\_model.ipynb
+notebooks/house_price_model.ipynb
 
 ```
 
@@ -898,7 +898,7 @@ from top to bottom and then copy the generated:
 
 ```text
 
-house\_price.pkl
+house_price.pkl
 
 ```
 
@@ -932,15 +932,15 @@ The backend should use the same Scikit-learn version to avoid model compatibilit
 
 
 
-\---
+---
 
 
 
-\# Backend
+# Backend
 
 
 
-\## Backend Setup
+## Backend Setup
 
 
 
@@ -956,7 +956,7 @@ python -m venv .venv
 
 
 
-\### Windows
+### Windows
 
 
 
@@ -988,17 +988,17 @@ Make sure the trained model exists at:
 
 ```text
 
-backend/models/house\_price.pkl
+backend/models/house_price.pkl
 
 ```
 
 
 
-\---
+---
 
 
 
-\## Backend Environment Variables
+## Backend Environment Variables
 
 
 
@@ -1010,9 +1010,9 @@ Create a `.env` file inside the `backend` directory using `.env.example`.
 
 | -------------- | ---------------------- | --------------------- |
 
-| MODEL\_PATH     | models/house\_price.pkl | Path to trained model |
+| MODEL_PATH     | models/house_price.pkl | Path to trained model |
 
-| ALLOWED\_ORIGIN | http://localhost:5173  | Allowed frontend URL  |
+| ALLOWED_ORIGIN | http://localhost:5173  | Allowed frontend URL  |
 
 
 
@@ -1022,19 +1022,19 @@ Example:
 
 ```env
 
-MODEL\_PATH=models/house\_price.pkl
+MODEL_PATH=models/house_price.pkl
 
-ALLOWED\_ORIGIN=http://localhost:5173
+ALLOWED_ORIGIN=http://localhost:5173
 
 ```
 
 
 
-\---
+---
 
 
 
-\## Run the Backend
+## Run the Backend
 
 
 
@@ -1074,15 +1074,15 @@ http://localhost:8000/docs
 
 
 
-\---
+---
 
 
 
-\## API Reference
+## API Reference
 
 
 
-\### Health Check
+### Health Check
 
 
 
@@ -1110,11 +1110,11 @@ Response:
 
 
 
-\---
+---
 
 
 
-\### Predict House Price
+### Predict House Price
 
 
 
@@ -1136,9 +1136,9 @@ Example request:
 
 &#x20; "location": "new-delhi",
 
-&#x20; "carpet\_area\_sqft": 1000,
+&#x20; "carpet_area_sqft": 1000,
 
-&#x20; "floor\_num": 3,
+&#x20; "floor_num": 3,
 
 &#x20; "bathroom": 2,
 
@@ -1166,7 +1166,7 @@ Example response:
 
 {
 
-&#x20; "predicted\_price": 4205200.0
+&#x20; "predicted_price": 4205200.0
 
 }
 
@@ -1174,7 +1174,7 @@ Example response:
 
 
 
-\### cURL Example
+### cURL Example
 
 
 
@@ -1182,19 +1182,19 @@ Example response:
 
 curl -X POST "http://localhost:8000/predict" \\
 
-\-H "Content-Type: application/json" \\
+-H "Content-Type: application/json" \\
 
-\-d "{\\"location\\":\\"new-delhi\\",\\"carpet\_area\_sqft\\":1000,\\"floor\_num\\":3,\\"bathroom\\":2,\\"balcony\\":2,\\"furnishing\\":\\"Semi-Furnished\\",\\"transaction\\":\\"Resale\\",\\"ownership\\":\\"Freehold\\",\\"facing\\":\\"East\\"}"
+-d "{\\"location\\":\\"new-delhi\\",\\"carpet_area_sqft\\":1000,\\"floor_num\\":3,\\"bathroom\\":2,\\"balcony\\":2,\\"furnishing\\":\\"Semi-Furnished\\",\\"transaction\\":\\"Resale\\",\\"ownership\\":\\"Freehold\\",\\"facing\\":\\"East\\"}"
 
 ```
 
 
 
-\---
+---
 
 
 
-\## Backend Tests
+## Backend Tests
 
 
 
@@ -1230,21 +1230,21 @@ The tests include:
 
 
 
-\* Successful prediction request
+* Successful prediction request
 
-\* Invalid request returning HTTP 422
-
-
-
-\---
+* Invalid request returning HTTP 422
 
 
 
-\# Frontend
+---
 
 
 
-\## Frontend Setup
+# Frontend
+
+
+
+## Frontend Setup
 
 
 
@@ -1286,11 +1286,11 @@ frontend/.env.example
 
 
 
-\---
+---
 
 
 
-\## Frontend Environment Variables
+## Frontend Environment Variables
 
 
 
@@ -1298,7 +1298,7 @@ frontend/.env.example
 
 | ----------------- | --------------------- | ------------------- |
 
-| VITE\_API\_BASE\_URL | http://localhost:8000 | FastAPI backend URL |
+| VITE_API_BASE_URL | http://localhost:8000 | FastAPI backend URL |
 
 
 
@@ -1308,17 +1308,17 @@ Example:
 
 ```env
 
-VITE\_API\_BASE\_URL=http://localhost:8000
+VITE_API_BASE_URL=http://localhost:8000
 
 ```
 
 
 
-\---
+---
 
 
 
-\## Run the Frontend
+## Run the Frontend
 
 
 
@@ -1342,11 +1342,11 @@ http://localhost:5173
 
 
 
-\---
+---
 
 
 
-\## Production Build
+## Production Build
 
 
 
@@ -1374,11 +1374,11 @@ frontend/dist/
 
 
 
-\---
+---
 
 
 
-\## Frontend Features
+## Frontend Features
 
 
 
@@ -1386,41 +1386,41 @@ The React application includes:
 
 
 
-\* Location dropdown populated from `locations.json`
+* Location dropdown populated from `locations.json`
 
-\* Carpet area numeric input
+* Carpet area numeric input
 
-\* Floor input
+* Floor input
 
-\* Bathroom input
+* Bathroom input
 
-\* Balcony input
+* Balcony input
 
-\* Furnishing selection
+* Furnishing selection
 
-\* Transaction selection
+* Transaction selection
 
-\* Ownership input
+* Ownership input
 
-\* Facing input
+* Facing input
 
-\* Client-side validation
+* Client-side validation
 
-\* Loading state
+* Loading state
 
-\* API error handling
+* API error handling
 
-\* Result page displaying the predicted house price
+* Result page displaying the predicted house price
 
-\* 404 page
-
-
-
-\---
+* 404 page
 
 
 
-\## End-to-End Flow
+---
+
+
+
+## End-to-End Flow
 
 
 
@@ -1472,7 +1472,7 @@ Random Forest predicts the price
 
 &#x20;       v
 
-FastAPI returns predicted\_price
+FastAPI returns predicted_price
 
 &#x20;       |
 
@@ -1488,45 +1488,45 @@ The end-to-end flow was tested successfully.
 
 
 
-\---
+---
 
 
 
-\## Screenshots
+## Screenshots
 
 
 
-\### Prediction Form
+### Prediction Form
 
 
 
-!\[Prediction Form](screenshots/prediction-form.png)
+![Prediction Form](screenshots/prediction-form.png)
 
 
 
-\### Prediction Result
+### Prediction Result
 
 
 
-!\[Prediction Result](screenshots/prediction-result.png)
+![Prediction Result](screenshots/prediction-result.png)
 
 
 
-\### FastAPI Swagger Documentation
+### FastAPI Swagger Documentation
 
 
 
-!\[FastAPI Swagger](screenshots/swagger-api.png)
+![FastAPI Swagger](screenshots/swagger-api.png)
 
 
 
-\---
+---
 
 
 
-\## Running the Full Project
+## Running the Full Project
 
-\### Terminal 1 — Backend
+### Terminal 1 — Backend
 
 
 
@@ -1540,7 +1540,7 @@ uvicorn app.main:app
 
 
 
-\### Terminal 2 — Frontend
+### Terminal 2 — Frontend
 
 
 
@@ -1566,33 +1566,33 @@ http://localhost:5173
 
 
 
-\---
+---
 
 
 
-\## Notes
+## Notes
 
 
 
-\* The raw Kaggle dataset is intentionally excluded from Git.
+* The raw Kaggle dataset is intentionally excluded from Git.
 
-\* `.env` files are excluded from Git.
+* `.env` files are excluded from Git.
 
-\* `node\_modules`, `dist`, `.venv`, and Python cache files are excluded.
+* `node_modules`, `dist`, `.venv`, and Python cache files are excluded.
 
-\* The trained `.pkl` model is excluded because its size is approximately 174 MB.
+* The trained `.pkl` model is excluded because its size is approximately 174 MB.
 
-\* `scikit-learn==1.6.1` should be used when loading the exported model.
+* `scikit-learn==1.6.1` should be used when loading the exported model.
 
-\* The notebook should be able to run from top to bottom before final submission.
-
-
-
-\---
+* The notebook should be able to run from top to bottom before final submission.
 
 
 
-\## Author
+---
+
+
+
+## Author
 
 
 
