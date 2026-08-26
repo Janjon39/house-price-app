@@ -1518,13 +1518,13 @@ The end-to-end flow was tested successfully.
 
 !\[FastAPI Swagger](screenshots/swagger-api.png)
 
+
+
 \---
 
 
 
 \## Running the Full Project
-
-
 
 \### Terminal 1 — Backend
 
